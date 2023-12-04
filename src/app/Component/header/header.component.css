@@ -1,0 +1,40 @@
+
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+  padding: 1rem;
+  justify-content: space-between;
+  width: fit-content;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: calc(100vw - 300px);
+
+}
+
+
+.menu-button, .flag-button, .fullscreen-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-icon, .fullscreen-icon {
+  display: block;
+  width: 2rem; /* Adjust icon size as needed */
+  height: 2rem; /* Adjust icon size as needed */
+  fill: currentColor; /* Use the current text color for the icon */
+}
+
+.flag-icon {
+  width: 2rem; /* Adjust flag icon size as needed */
+  height: 2rem; /* Adjust flag icon size as needed */
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.button-section{
+  display: flex;
+}
