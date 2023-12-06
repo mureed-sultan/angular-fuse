@@ -50,7 +50,7 @@ export class NavigationComponent {
           title: 'Analytics',
           type: 'basic',
           icon: 'pie_chart',
-          link: '/dashboards/analytics'
+          link: 'designation'
         },
         {
           id: 'dashboards.finance',

@@ -22,6 +22,7 @@ import { NavigationComponent } from './Component/navigation/navigation.component
 import { ProjectComponent } from './Pages/Dashboard/project/project.component';
 import { EmployeeInformationComponent } from './Component/employee-information/employee-information.component';
 import { FormsModule } from '@angular/forms';
+import { DesignationComponent } from './Pages/designation/designation.component';
 
 
 
@@ -38,7 +39,8 @@ import { FormsModule } from '@angular/forms';
     HeaderComponent,
     NavigationComponent,
     ProjectComponent,
-    EmployeeInformationComponent
+    EmployeeInformationComponent,
+    DesignationComponent
   ],
   imports: [
     BrowserModule,
