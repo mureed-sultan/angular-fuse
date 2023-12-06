@@ -23,6 +23,7 @@ import { ProjectComponent } from './Pages/Dashboard/project/project.component';
 import { EmployeeInformationComponent } from './Component/employee-information/employee-information.component';
 import { FormsModule } from '@angular/forms';
 import { DesignationComponent } from './Pages/designation/designation.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -53,6 +54,7 @@ import { DesignationComponent } from './Pages/designation/designation.component'
     MatProgressSpinnerModule,
     BrowserAnimationsModule,
     FormsModule,
+    NgbModule,
 
   ],
   providers: [],

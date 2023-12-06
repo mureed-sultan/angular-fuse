@@ -1,0 +1,43 @@
+
+
+  
+  table.table thead th {
+    background-color: #007bff; /* Add your desired blue color */
+    color: #fff;
+  }
+  
+  .table th, .table td {
+    text-align: center;
+  }
+  
+  .table th {
+    position: relative;
+  }
+  
+  .table th::after {
+    content: '\2191'; /* Unicode for up arrow */
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    font-size: 12px;
+    opacity: 0.5;
+  }
+  
+  .table th.sorted-asc::after {
+    content: '\2191'; /* Unicode for up arrow */
+  }
+  
+  .table th.sorted-desc::after {
+    content: '\2193'; /* Unicode for down arrow */
+  }
+  .modal{
+    display: block;
+  }
+table.table i{
+  color: black;
+}
+.modal button{
+  color: black;
+}.modal button:hover{
+  color: white;
+}
