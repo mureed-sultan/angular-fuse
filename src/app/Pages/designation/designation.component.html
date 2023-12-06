@@ -1,8 +1,9 @@
 <div class="container mt-4">
-  <button class="btn btn-primary" (click)="openModal()"><i class="fa fa-plus-square"></i>
+  <h2>Designation</h2>
+  <button class="btn btn-purpal" (click)="openModal()"><i class="fa fa-plus-square"></i>
     Add/Edit Entry</button>
 
-  <div class="row mb-10">
+  <div class="row mb-10 mt-10">
     <div class="col-md-6 d-flex align-items-center">
       <label for="entriesPerPage">Entries per Page:</label>
       <select id="entriesPerPage" class="form-control" [(ngModel)]="entriesPerPage" (change)="changeEntriesPerPage()">

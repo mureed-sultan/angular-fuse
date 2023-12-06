@@ -2,8 +2,13 @@
 
   
   table.table thead th {
-    background-color: #007bff; /* Add your desired blue color */
+    background-color: var(--heading-color); 
     color: #fff;
+  }
+  .btn-purpal{
+    background-color: var(--heading-color); 
+    color: white;
+
   }
   
   .table th, .table td {
