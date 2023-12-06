@@ -19,6 +19,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './Pages/Dashboard/home/home.component';
 import { HeaderComponent } from './Component/header/header.component';
 import { NavigationComponent } from './Component/navigation/navigation.component';
+import { ProjectComponent } from './Pages/Dashboard/project/project.component';
+import { EmployeeInformationComponent } from './Component/employee-information/employee-information.component';
+import { FormsModule } from '@angular/forms';
+
 
 
 
@@ -32,7 +36,9 @@ import { NavigationComponent } from './Component/navigation/navigation.component
     AlertComponent,
     HomeComponent,
     HeaderComponent,
-    NavigationComponent
+    NavigationComponent,
+    ProjectComponent,
+    EmployeeInformationComponent
   ],
   imports: [
     BrowserModule,
@@ -44,6 +50,8 @@ import { NavigationComponent } from './Component/navigation/navigation.component
     MatInputModule,
     MatProgressSpinnerModule,
     BrowserAnimationsModule,
+    FormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

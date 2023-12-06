@@ -70,9 +70,9 @@ body fuse-splash-screen .spinner .bounce2 {
     }
 }
 
-body:not(.fuse-splash-screen-hidden) {
+/* body:not(.fuse-splash-screen-hidden) {
     overflow: hidden;
-}
+} */
 
 body.fuse-splash-screen-hidden fuse-splash-screen {
     visibility: hidden;

@@ -1,0 +1,48 @@
+<!-- employee-information.component.html -->
+
+<section class="employee-form">
+  <div class="form-header">
+    <img src="../../../assets/images/ahmad-logo.png" alt="" />
+    <div class="form-title">
+      <h2>Ahmad Vegetable Oil & Ghee Mills (Pvt.) Limited Sukkur</h2>
+      <h2>Employee Information Form</h2>
+    </div>
+  </div>
+  <div class="form-field-section">
+    <div class="personal-information">
+      <form action="">
+        <div *ngFor="let section of formFields">
+          <h5>{{ section.sectionTitle }}</h5>
+          <div class="form-field" *ngFor="let field of section.fields">
+            <ng-container *ngIf="field.type !== 'composite'; else compositeField">
+              <label for="{{ field.name }}">{{ field.label }}: </label>
+              <input *ngIf="
+                  field.type === 'text' ||
+                  field.type === 'number' ||
+                  field.type === 'email' ||
+                  field.type === 'date'
+                " type="{{ field.type }}" name="{{ field.name }}" id="{{ field.name }}"
+                [(ngModel)]="formData[field.name]" />
+              <select *ngIf="field.type === 'select'" name="{{ field.name }}" id="{{ field.name }}"
+                [(ngModel)]="formData[field.name]">
+                <option *ngFor="let option of field.options" [value]="option.value">
+                  {{ option.label }}
+                </option>
+              </select>
+            </ng-container>
+            <ng-template #compositeField>
+              <label>{{ field.label }}: </label>
+              <div class="form-sub-field">
+                <div *ngFor="let subfield of field.subfields">
+                  <input type="text" name="{{ subfield }}" id="{{ subfield }}" placeholder="{{
+                      subfield.charAt(0).toUpperCase() + subfield.slice(1)
+                    }}" [(ngModel)]="formData[subfield]" />
+                </div>
+              </div>
+            </ng-template>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
